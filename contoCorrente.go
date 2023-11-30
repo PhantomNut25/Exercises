@@ -1,3 +1,5 @@
+package main
+
 import (
 	"fmt"
 	"os"
@@ -6,18 +8,19 @@ import (
 
 func main() {
 	if len(os.Args) == 1 {
-		fmt.Println("Manca il caldo iniziale")
+		fmt.Println("Missing inital balance")
 	}
-	saldo, _ := strconv.Atoi(os.Args[1])
-	var spese int
+	//Read initial balance from main argument
+	balance, _ := strconv.Atoi(os.Args[1])
+	var expenses int
+	//While balance is greater than 0 keep reading expences
+	for balance > 0 {
+		fmt.Scan(&expenses)
 
-	for saldo > 0 {
-		fmt.Scan(&spese)
+		balance -= expenses
 
-		saldo -= spese
-
-		fmt.Println("Saldo: ", saldo)
+		fmt.Println("balance: ", balance)
 
 	}
-	fmt.Println("Saldo finale: ", saldo)
+	fmt.Println("Final balance: ", balance)
 }

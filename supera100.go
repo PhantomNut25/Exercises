@@ -3,17 +3,18 @@ package main
 import "fmt"
 
 func main() {
-	var numero int
+	var number int
+	//Scan a sequence of numbers until a number is greater than 100, break with -1
 	for {
-		fmt.Scan(&numero)
-		if numero == -1 {
+		fmt.Scan(&number)
+		if number == -1 {
 			break
 		}
 
-		if numero > 100 {
-			fmt.Println(numero)
+		if number > 100 {
+			fmt.Println(number)
 			return
 		}
 	}
-	fmt.Println("Nessun numero maggiore di 100")
+	fmt.Println("No number greater than 100")
 }
