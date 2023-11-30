@@ -1,2 +1,2 @@
-# GoExercises
-Some dummy Go exercises
+# Exercises
+Some dummy exercises
