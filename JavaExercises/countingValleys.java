@@ -1,12 +1,12 @@
 import java.utils.*;
 import java.io.*;
 
-class countingValleys{
+public class countingValleys{
     public static void main(String[] args){
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("How many steps?");
         int steps=bf.readLine();
-        System.out.println("String for path (U=uphill, D=downhill)");
+        System.out.println("String for path U=uphill, D=downhill (eg. \"UUDDUUA\"");
         String path = bf.readLine();
         System.out.println(countingValleys(steps, path));
 
