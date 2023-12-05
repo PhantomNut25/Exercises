@@ -1,0 +1,1 @@
+Some minor go exercises + lanternFish.go made from the Advent of code 2016 (https://adventofcode.com/2021/day/6)
